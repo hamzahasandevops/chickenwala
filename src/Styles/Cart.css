@@ -1,0 +1,280 @@
+/* Cart.css */
+.cart-header {
+    background-color: #ffffff;
+    /* Soft, creamy color reminiscent of poultry shops */
+    color: #d14d1a;
+    /* Deep orange-red for a strong, inviting contrast */
+    padding: 20px 30px;
+    /* Generous padding for a welcoming look */
+    text-align: center;
+    /* Center-align text */
+    border-radius: 8px;
+    /* Slightly rounded corners */
+    border: 2px solid #d14d1a;
+    /* Matching border for consistency */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Larger shadow for depth */
+    font-family: 'Roboto', sans-serif;
+    /* Clean, modern font for readability */
+    position: relative;
+    /* For positioning child elements */
+    margin-bottom: 20px;
+    /* Space below the header */
+}
+
+.cart-header h1 {
+    margin: 0;
+    /* Remove default margin */
+    font-size: 2.5rem;
+    /* Large font size for prominence */
+    font-weight: bold;
+    /* Bold for emphasis */
+    text-transform: uppercase;
+    /* Uppercase for a strong look */
+    letter-spacing: 1px;
+    /* Slightly increased letter spacing */
+}
+
+.cart-header::before {
+    content: url('https://img.icons8.com/ios-filled/50/000000/chicken.png');
+    /* Chicken icon */
+    position: absolute;
+    /* Position the icon absolutely */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Center alignment */
+    top: -35px;
+    /* Adjust positioning above the header */
+    width: 80px;
+    /* Icon size */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.cart-header p {
+    margin: 10px 0 0;
+    /* Margin for optional additional text */
+    font-size: 1.1rem;
+    /* Slightly larger font size */
+    color: #a0522d;
+    /* Light brown for contrast */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center-align items if fewer than 4 */
+    padding: 20px;
+    gap: 20px;
+    /* Space between cards */
+}
+
+.cart-item {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 20px);
+    /* Default to 4 items per row */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.cart-image {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cart-details {
+    flex-grow: 1;
+}
+
+.cart-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.cart-price {
+    font-size: 16px;
+    color: #28a745;
+}
+
+.cart-discount,
+.cart-quantity,
+.cart-description {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-center .cart-quantity {
+    margin-right: 15px;
+    /* Space between quantity and buttons */
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Space between buttons */
+}
+
+.button-group .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-light {
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.btn-light:hover {
+    background-color: #e2e6ea;
+}
+
+.btn-light:active {
+    background-color: #dae0e5;
+    border-color: #cfd3d6;
+}
+
+.rounded.circle {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.btn-light .fa-trash {
+    font-size: 16px;
+    color: #dc3545;
+}
+
+.btn-light .fa-trash:hover {
+    color: #c82333;
+}
+
+
+
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary:active {
+    background-color: #004085;
+}
+/* Cart.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Space between items and the summary */
+}
+
+.cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Space between items */
+    width: calc(75% - 20px);
+    /* Adjust width to make space for the summary */
+}
+
+.cart-item {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: calc(25% - 20px);
+    /* Adjust width of each item */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.summary-container {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 25%;
+    /* Width to fit beside items */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Align items to the start */
+    position: sticky;
+    top: 120px;
+    /* Sticks the summary container to the top */
+}
+
+.summary-container p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #495057;
+}
+
+.summary-container .total-item {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.summary-container .total-price {
+    font-weight: bold;
+    font-size: 18px;
+    color: #28a745;
+}
+
+.summary-container .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-primary:active {
+    background-color: #004085;
+}

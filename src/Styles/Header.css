@@ -1,0 +1,109 @@
+/* General Navbar Styles */
+.navbar {
+    background-color: #f8c102;
+    /* Warm yellow background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for depth */
+}
+
+.navbar-brand img {
+    height: 110px;
+    /* Consistent logo size */
+    width: 120px;
+}
+
+/* Navbar Links */
+.navbar-nav {
+
+    /* Center items horizontally */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+    /* Spacing between nav items */
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #3a3a3a;
+    /* Dark gray text */
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    /* More padding for a button-like feel */
+    border-radius: 5px;
+    /* Rounded corners */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff;
+    /* White text on hover */
+
+    /* Red background on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffffff;
+
+    /* Red background for active link */
+    border-radius: 5px;
+    /* Ensure active link has rounded corners */
+}
+
+/* Icon Styles */
+.navbar-nav .nav-link i {
+    margin-right: 10px;
+    /* Space between icon and text */
+    font-size: 20px;
+    /* Icon size */
+}
+
+/* Search Form */
+.form-control {
+    border-radius: 20px;
+    /* Rounded corners */
+ 
+    /* Red border to match theme */
+    padding: 10px 15px;
+    /* Adjust padding for better fit */
+}
+
+.btn-outline-success {
+    border-radius: 20px;
+    /* Rounded corners */
+    color: #d9534f;
+    /* Button color */
+    border-color: #d9534f;
+    /* Border color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+    /* Bold text */
+    padding: 8px 15px;
+    /* Adjust padding for button */
+}
+
+.btn-outline-success:hover {
+    background-color: #6161d1;
+    /* Red background on hover */
+    color: #ffffff;
+    /* White text on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        /* Center nav items on smaller screens */
+        margin-top: 10px;
+        /* Margin adjustment */
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+        /* Stack items vertically with margin */
+    }
+}

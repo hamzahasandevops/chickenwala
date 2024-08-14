@@ -1,0 +1,249 @@
+/* Hero.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+.d-flex {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    /* Light background for the menu */
+    padding: 10px 20px;
+    
+}
+
+img {
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 60px;
+    /* Adjust size as needed */
+    width: 60px;
+}
+
+/* Import the font in your CSS file or HTML head */
+
+
+.list {
+    overflow-x: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.list-item {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.list-item:hover {
+    background-color: #f0f0f0;
+}
+
+.list-item.active {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.list-item:hover {
+    background-color: #e9ecef;
+    /* Light grey background on hover */
+    border-radius: 5px;
+    /* Rounded corners on hover */
+}
+
+.last-item {
+    color: #ff6347;
+    /* Highlight color for the last item */
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    img {
+        margin-bottom: 10px;
+    }
+
+    .list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .list-item {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        /* Center-align text on smaller screens */
+    }
+}
+
+/* //MAIN CSS */
+/* Hero.css */
+
+.d-flex {
+ 
+    
+    /* Allow wrapping of the container */
+}
+
+img {
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+.item-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Adds spacing between items */
+    width: 100%;
+    justify-content: center;
+    /* Center items within the container */
+}
+
+.item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transitions */
+}/* styles.css */
+
+/* styles.css */
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Space between items */
+}
+
+.ins {
+    font-size: 1.5rem;
+    /* Increase font size for new price */
+    font-weight: bold;
+    color: #333;
+    /* Dark color for new price */
+    margin-right: 10px;
+    /* Space between new price and old price */
+}
+
+.del {
+    font-size: 1rem;
+    /* Slightly smaller font size for old price */
+    color: #888;
+    /* Light gray color for old price */
+    text-decoration: line-through;
+    /* Line-through style */
+    margin-right: 10px;
+    /* Space between old price and discount text */
+}
+
+.discount {
+    font-size: 1rem;
+    /* Font size for discount */
+    color: green;
+    /* Lighter color for discount text */
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow on hover */
+}
+
+.item-image {
+    height: 150px;
+    /* Larger image size */
+    width: 160px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    /* Space between image and text */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover the area */
+}
+
+.item-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-details h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.item-details p {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.item-details p:first-of-type {
+    font-weight: bold;
+    /* Emphasize the first paragraph */
+}
+
+.last-item {
+    color: #ff6347;
+    /* Optional styling for the last item */
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item-container {
+        flex-direction: column;
+        align-items: center;
+        /* Center items on smaller screens */
+    }
+
+    .item-card {
+        width: 100%;
+        /* Full width for smaller screens */
+    }
+}
+
+.row {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.col-10 {
+  flex: 0 0 83.33%; /* 10 out of 12 columns width */
+  max-width: 83.33%;
+  padding: 0 15px;
+}
+
+.col-2 {
+  flex: 0 0 16.67%; /* 2 out of 12 columns width */
+  max-width: 16.67%;
+  padding: 0 15px;
+  background-color: #f8f9fa; /* Light background */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}

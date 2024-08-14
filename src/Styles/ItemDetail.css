@@ -1,0 +1,48 @@
+/* ItemDetail.css */
+
+.item-detail {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-detail h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.item-detail img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.item-detail p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.item-detail .item-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item-detail .item-info div {
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.item-detail .item-info .label {
+    font-weight: bold;
+}
+
+.item-detail .item-info .value {
+    margin-left: 5px;
+}

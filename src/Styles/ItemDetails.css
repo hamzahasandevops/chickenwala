@@ -1,0 +1,202 @@
+/* Container for the category detail */
+.category-detail-container {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Heading for the category */
+.category-detail-container h1 {
+    font-size: 2.5rem;
+    /* Reduced font size */
+    margin-bottom: 20px;
+    /* Reduced margin */
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #ff6f61, #d83a6e);
+    padding: 15px;
+    /* Reduced padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Reduced shadow */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative effect for the heading */
+.category-detail-container h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/* Grid container for products */
+/* Grid container for products */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Space between items */
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual product item */
+.product-item {
+    flex: 1 1 calc(25% - 20px);
+    /* Default: fit 4 items per row */
+    max-width: 400px;
+    /* Max width for fewer items */
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    /* Shadow */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    /* Margin for spacing */
+}
+
+/* Media query for fewer items */
+@media (max-width: 1200px) {
+
+    /* Adjust based on your grid container size */
+    .product-item {
+        flex: 1 1 calc(33.333% - 20px);
+        /* Fit 3 items per row */
+    }
+}
+
+@media (max-width: 900px) {
+    .product-item {
+        flex: 1 1 calc(50% - 20px);
+        /* Fit 2 items per row */
+    }
+}
+
+@media (max-width: 600px) {
+    .product-item {
+        flex: 1 1 calc(100% - 20px);
+        /* Fit 1 item per row */
+    }
+}
+
+/* Product image styling */
+.product-item img {
+    width: 100%;
+    /* Full width of container */
+    height: 200px;
+    /* Fixed height */
+    object-fit: cover;
+    /* Cover the container without distortion */
+    border-bottom: 2px solid #f4f4f4;
+    /* Separator */
+}
+
+/* Title of the product */
+.product-item h3 {
+    font-size: 1.4rem;
+    /* Font size */
+    color: #333;
+    font-weight: 600;
+    margin: 10px 0;
+    /* Margin for spacing */
+}
+
+/* Description of the product */
+.product-item .description {
+    font-size: 0.9rem;
+    /* Font size */
+    color: #555;
+    margin: 10px 0;
+    /* Margin for spacing */
+    text-align: center;
+    /* Center align text */
+}
+
+/* Container for price and discount */
+.price-discount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    /* Center align text */
+    margin: 10px 0;
+    /* Margin around price and discount */
+}
+
+/* Price styling */
+.product-item .price {
+    font-size: 1.2rem;
+    /* Font size */
+    color: #000;
+    font-weight: 700;
+}
+
+/* Discount styling */
+.product-item .discount {
+    font-size: 1rem;
+    /* Font size */
+    color: #d83a6e;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    flex-direction: row;
+    /* Stack buttons vertically */
+    gap: 10px;
+    /* Space between buttons */
+    width: 100%;
+    /* Full width */
+    margin-top: auto;
+    /* Push buttons to the bottom */
+}
+
+/* Common button styles */
+.btn {
+    padding: 10px 20px;
+    /* Padding for buttons */
+    border: none;
+    border-radius: 6px;
+    /* Border radius */
+    font-size: 1rem;
+    /* Font size */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    /* Full width of the container */
+}
+
+/* Add to Cart button */
+.add-to-cart {
+    background-color: #ff6f61;
+}
+
+.add-to-cart:hover {
+    background-color: #e55c50;
+    transform: translateY(-2px);
+}
+
+/* Buy Now button */
+.buy-now {
+    background-color: #4caf50;
+}
+
+.buy-now:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}

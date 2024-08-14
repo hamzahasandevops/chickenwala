@@ -1,0 +1,174 @@
+/* General Container Styling */
+.container-fluid {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Slider Container Styling */
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px 0;
+    background-color: #f8f8f8;
+    /* Light background color for contrast */
+    border-radius: 10px;
+    /* Rounded corners for the slider */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-content {
+    display: flex;
+    transition: transform 0.5s ease;
+    /* Smoother scrolling effect */
+}
+
+.slider-item {
+    min-width: 250px;
+    /* Adjust based on item size */
+    margin: 0 15px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slider-item img {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+    /* Rounded corners for images */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    /* Shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.slider-item img:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect on hover */
+}
+
+.slider-item p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+ 
+    /* Darker text color for contrast */
+}
+
+/* Slider Control Buttons Styling */
+.slider-control {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    /* Border for a subtle frame */
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Enhanced shadow */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.slider-control.prev {
+    left: 15px;
+}
+
+.slider-control.next {
+    right: 15px;
+}
+
+.slider-control:hover {
+    background-color: #ddd;
+    /* Slightly darker background on hover */
+    color: #000;
+    /* Darker text color on hover */
+}
+
+/* Slider container styles */
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Slider control button styles */
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slider-control:hover {
+    background-color: #0056b3;
+}
+
+.slider-control:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(38, 143, 255, 0.5);
+}
+
+/* Previous button specific styles */
+.slider-control.prev {
+    left: 10px;
+}
+
+/* Next button specific styles */
+.slider-control.next {
+    right: 10px;
+}
+
+/* Slider content styles */
+.slider-wrapper {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider-content {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease;
+}
+
+.slider-item {
+    min-width: 200px;
+    margin-right: 10px;
+}
+
+.slider-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider-item p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333;
+}
